@@ -1,18 +1,31 @@
-# PROGETTO MACHINE LEARNING
+# AI-LEAP: Sistema di Digitalizzazione per Moodle
+
+<img src="assets/images/logo_full.png" alt="Logo" width="200">
+
+[![Moodle](https://img.shields.io/badge/Moodle-F98012?style=flat-square&logo=moodle&logoColor=white)](#)
+[![UniTo](https://img.shields.io/badge/UniTo-Università_degli_Studi_di_Torino-blue?style=flat-square)](#)
 
 ## Sommario
-
-- [Introduzione](#introduzione)
-- [Struttura del Repository](#struttura-del-repository) 
+- [Introduzione e Contesto](#introduzione-e-contesto)
+- [Struttura del Repository](#struttura-del-repository)
+- [Metodologia](#metodologia)
 
 ---
-## Introduzione
-Il seguente repository contiene la documentazione del progetto di Machine Learning sviluppato durante lo stage presso l'Università degli Studi di Torino.<br>
-Il progetto si concentra sulla ricerca e lo sviluppo di uno strumento adatto a rappresentare e gestire sperimentazioni di Machine Learning in un contesto educativo, con particolare attenzione all'integrazione con la piattaforma Moodle.
+
+## Introduzione e Contesto
+Questo repository contiene la documentazione tecnica e gli elaborati del sistema di digitalizzazione per Moodle, sviluppato durante lo stage accademico presso il **Dipartimento di Informatica dell'Università degli Studi di Torino**.
+
+Il lavoro documentato non è un'iniziativa isolata, ma si inserisce all'interno del più ampio ecosistema di **[AI-LEAP](https://ai-leap.di.unito.it/)**, un progetto accademico il cui obiettivo generale è esplorare le sfide e le opportunità dell'Intelligenza Artificiale nel contesto educativo. 
 
 ## Struttura del Repository
 
-- [docs](docs): contiene la documentazione del progetto, suddivisa in più file per facilitare la navigazione e la comprensione dei concetti trattati.
-    La wiki è accessibile all'indirizzo [https://emalter.github.io/ML-Project/](https://emalter.github.io/ML-Project/)
-- [thesis](thesis): contiene la tesi di laurea in formato PDF, che descrive in dettaglio il progetto, le metodologie utilizzate e i risultati ottenuti.<br>
-La tesi è anche accessibile in modalità libro all'indirizzo [https://emalter.github.io/ML-Project/tesi/](https://emalter.github.io/ML-Project/Documentazione/Tesi/)
+Il materiale è organizzato nelle seguenti directory principali per facilitarne la consultazione:
+
+* **`docs/`**: Contiene la documentazione tecnica di sistema e le linee guida per i vari ruoli.
+  > **Wiki del progetto:** È possibile consultare la documentazione completa in formato web all'indirizzo [AI-Leap WikiMoodle](https://emalter.github.io/AI-Leap_WikiMoodle/).
+
+* **`thesis/`**: Contiene il documento della tesi di laurea in formato PDF, che descrive in dettaglio il contesto, il problema, le scelte progettuali e i risultati ottenuti.
+  > **Tesi online:** La tesi è accessibile anche in [modalità libro (Documentazione)](https://emalter.github.io/AI-Leap_WikiMoodle/Documentazione/Tesi/).
+
+## Metodologia
+L'analisi e la progettazione del sistema sono state condotte seguendo la metodologia **Unified Process**, utilizzando il linguaggio di modellazione **UML** per definire i requisiti, i casi d'uso e l'architettura necessaria all'integrazione dell'applicativo con la piattaforma Moodle.

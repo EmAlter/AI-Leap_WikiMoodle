@@ -1,7 +1,7 @@
 site_name: Wiki - Sistema Moodle per Sperimentazioni
-site_url: https://emalter.github.io/ML-Project/
-repo_url: https://github.com/EmAlter/ML-Project
-repo_name: emalter/ML-Project
+site_url: https://emalter.github.io/AI-Leap_WikiMoodle/
+repo_url: https://github.com/EmAlter/AI-Leap_WikiMoodle
+repo_name: emalter/AI-Leap_WikiMoodle
 
 nav:
   - Home: index.md
