@@ -1,7 +1,8 @@
-site_name: Progetto Machine Learning
+site_name: Wiki - Sistema Moodle per Sperimentazioni
 site_url: https://emalter.github.io/ML-Project/
 repo_url: https://github.com/EmAlter/ML-Project
 repo_name: emalter/ML-Project
+
 nav:
   - Home: index.md
   - Documentazione:
@@ -78,9 +79,17 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+  - assets/diagram/diagram.css
+
+extra_javascript:
+  - https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js
+  - assets/diagram/diagram.js
+
+
 theme:
   name: material
   language: it
+  logo: assets/images/logo.png
   palette:
     - scheme: default
       primary: teal

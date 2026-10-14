@@ -1,21 +1,12 @@
-# Progetto Machine Learning
+# Introduzione alla Wiki
+Benvenuti nella documentazione tecnica del sistema di digitalizzazione per Moodle.
 
-Benvenuto/a nella wiki del progetto di Machine Learning dell'Università degli Studi di Torino!
+Questa wiki fornisce le linee guida, i modelli di dominio e gli esempi pratici necessari per la configurazione e l'utilizzo del sistema. È pensata per supportare i diversi ruoli (Progettista, Moderatore, Esperto, Testato) nella creazione e gestione di corsi, test e sperimentazioni didattiche.
 
-  <img src="../assets/images/logoUnito.png" alt="Logo">
+### Il contesto: Progetto AI-LEAP
 
-L'obiettivo di questo progetto è quello di sviluppare una soluzione digitale per la gestione e la rappresentazione di sperimentazioni
+<img src="assets/images/logo_full.png" alt="Logo">
 
-## Commands
+Il lavoro documentato in questa wiki non è un'iniziativa isolata, ma si inserisce all'interno del più ampio ecosistema di **[AI-LEAP](https://ai-leap.di.unito.it/)**, un progetto accademico di cui fa parte anche il Dipartimento di Informatica dell'Università di Torino. 
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+L'obiettivo generale di AI-LEAP è esplorare le sfide e le opportunità dell'Intelligenza Artificiale nel contesto educativo.
