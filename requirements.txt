@@ -1,0 +1,5 @@
+mkdocs-material
+mkdocs-callouts
+mkdocs-network-graph-plugin
+mkdocs-video
+mkdocs-pdf
