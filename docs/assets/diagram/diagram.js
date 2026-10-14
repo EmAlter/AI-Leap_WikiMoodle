@@ -10,7 +10,7 @@ document$.subscribe(async () => {
   const svg = wrapper.querySelector('svg');
   const NS = 'http://www.w3.org/2000/svg';
 
-  const DX = -11, DY = -2;
+  const DX = -11, DY = -5;
   const norm = s => (s || '').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
 
   // --- 1. Legge il .uxf (posizioni + testi delle relazioni) ---------------
