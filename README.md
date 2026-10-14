@@ -1,9 +1,9 @@
-# AI-LEAP: Sistema di Digitalizzazione per Moodle
+# AI-LEAP: Digitalizzazione di Sperimentazioni in Moodle
 
-<img src="assets/images/logo_full.png" alt="Logo" width="200">
+[![Logo](docs/assets/images/logo_full.png)](https://ai-leap.di.unito.it/)
 
-[![Moodle](https://img.shields.io/badge/Moodle-F98012?style=flat-square&logo=moodle&logoColor=white)](#)
-[![UniTo](https://img.shields.io/badge/UniTo-Università_degli_Studi_di_Torino-blue?style=flat-square)](#)
+[![Moodle](https://img.shields.io/badge/Moodle-F98012?style=flat-square&logo=moodle&logoColor=white)](https://moodle.org/)
+[![UniTo](https://img.shields.io/badge/UniTo-Università_degli_Studi_di_Torino-blue?style=flat-square)](https://www.unito.it/)
 
 ## Sommario
 - [Introduzione e Contesto](#introduzione-e-contesto)
@@ -13,7 +13,7 @@
 ---
 
 ## Introduzione e Contesto
-Questo repository contiene la documentazione tecnica e gli elaborati del sistema di digitalizzazione per Moodle, sviluppato durante lo stage accademico presso il **Dipartimento di Informatica dell'Università degli Studi di Torino**.
+Questo repository contiene la documentazione tecnica e gli elaborati del sistema di digitalizzazione per Moodle, sviluppato durante lo stage accademico presso il [Dipartimento di Informatica dell'Università degli Studi di Torino](https://laurea.informatica.unito.it/do/home.pl/).
 
 Il lavoro documentato non è un'iniziativa isolata, ma si inserisce all'interno del più ampio ecosistema di **[AI-LEAP](https://ai-leap.di.unito.it/)**, un progetto accademico il cui obiettivo generale è esplorare le sfide e le opportunità dell'Intelligenza Artificiale nel contesto educativo. 
 
@@ -25,7 +25,7 @@ Il materiale è organizzato nelle seguenti directory principali per facilitarne 
   > **Wiki del progetto:** È possibile consultare la documentazione completa in formato web all'indirizzo [AI-Leap WikiMoodle](https://emalter.github.io/AI-Leap_WikiMoodle/).
 
 * **`thesis/`**: Contiene il documento della tesi di laurea in formato PDF, che descrive in dettaglio il contesto, il problema, le scelte progettuali e i risultati ottenuti.
-  > **Tesi online:** La tesi è accessibile anche in [modalità libro (Documentazione)](https://emalter.github.io/AI-Leap_WikiMoodle/Documentazione/Tesi/).
+  > **Tesi online:** La tesi è accessibile anche in [modalità libro (Documentazione)](https://emalter.github.io/AI-Leap_WikiMoodle/thesis/).
 
 ## Metodologia
 L'analisi e la progettazione del sistema sono state condotte seguendo la metodologia **Unified Process**, utilizzando il linguaggio di modellazione **UML** per definire i requisiti, i casi d'uso e l'architettura necessaria all'integrazione dell'applicativo con la piattaforma Moodle.
