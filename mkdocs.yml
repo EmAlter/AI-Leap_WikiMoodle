@@ -82,26 +82,27 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
   - assets/diagram/diagram.css
+  - stylesheets/color_picker.css
 
 extra_javascript:
   - https://unpkg.com/@panzoom/panzoom/dist/panzoom.min.js
   - assets/diagram/diagram.js
+  - javascript/color_picker.js
 
 
 theme:
   name: material
+  custom_dir: overrides
   language: it
   logo: assets/images/logo.png
   palette:
     - scheme: default
-      primary: yellow
-      accent: yellow
+      primary: teal
       toggle:
         icon: material/brightness-7
         name: Passa alla modalità scura
     - scheme: slate
-      primary: deep purple
-      accent: deep purple
+      primary: teal
       toggle:
         icon: material/brightness-4
         name: Passa alla modalità chiara
@@ -111,6 +112,7 @@ theme:
     - navigation.path
     - content.code.copy
     - content.tooltips
+    - search.highlight
   
   icon:
     repo: 

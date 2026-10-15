@@ -12,6 +12,14 @@
   filter: invert(1) hue-rotate(180deg);
 }
 
+/* Aggiunge uno sfondo bianco al logo solo in modalità scura */
+[data-md-color-scheme="slate"] img[src*="logo_full.png"] {
+  background-color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
 .term {
   position: relative;
   border-bottom: 1px dotted var(--md-accent-fg-color);
@@ -129,6 +137,33 @@
   background-color: #e89b0d;
   -webkit-mask-image: var(--md-admonition-icon--informazioni-aggiuntive);
           mask-image: var(--md-admonition-icon--informazioni-aggiuntive);
+}
+
+@media screen and (min-width: 60em) {
+  /* barra compatta: solo icona */
+  .md-search__inner {
+    width: 2.4rem;
+    transition: width 0.25s ease;
+  }
+  .md-search__form {
+    background-color: transparent;
+  }
+  .md-search__input::placeholder {
+    color: transparent;
+  }
+
+  /* espansa quando è attiva */
+  .md-search__inner:focus-within,
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__inner {
+    width: 20rem;               /* sposta qui la larghezza che preferisci */
+  }
+  .md-search__inner:focus-within .md-search__form,
+  [data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+    background-color: var(--md-default-bg-color);
+  }
+  .md-search__inner:focus-within .md-search__input::placeholder {
+    color: var(--md-default-fg-color--light);
+  }
 }
 
 }

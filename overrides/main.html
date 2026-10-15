@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+<script>
+(function () {
+  var KEY = 'site-palette-color';
+  var NO_ACCENT = ['brown', 'grey', 'blue-grey', 'black', 'white'];
+
+  function fix() {
+    var n = null;
+    try { n = localStorage.getItem(KEY); } catch (e) {}
+    if (!n) return;
+    var b = document.body;
+    if (b.getAttribute('data-md-color-primary') !== n)
+      b.setAttribute('data-md-color-primary', n);
+    if (NO_ACCENT.indexOf(n) < 0 && b.getAttribute('data-md-color-accent') !== n)
+      b.setAttribute('data-md-color-accent', n);
+  }
+
+  // aspetta che il <body> esista, poi applica subito e controlla ogni cambio
+  var wait = new MutationObserver(function () {
+    if (!document.body) return;
+    wait.disconnect();
+    fix();
+    new MutationObserver(fix).observe(document.body, {
+      attributes: true,
+      attributeFilter: ['data-md-color-primary', 'data-md-color-accent', 'data-md-color-scheme']
+    });
+  });
+  wait.observe(document.documentElement, { childList: true });
+})();
+</script>
+{{ super() }}
+{% endblock %}
