@@ -166,4 +166,10 @@
   }
 }
 
+/* Nasconde il titolo e il pulsante del network graph */
+.md-nav__title, 
+.graph-header {
+  display: none !important;
+}
+
 }
