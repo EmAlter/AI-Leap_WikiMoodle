@@ -94,14 +94,14 @@ theme:
   logo: assets/images/logo.png
   palette:
     - scheme: default
-      primary: teal
-      accent: teal
+      primary: yellow
+      accent: yellow
       toggle:
         icon: material/brightness-7
         name: Passa alla modalità scura
     - scheme: slate
-      primary: teal
-      accent: teal
+      primary: deep purple
+      accent: deep purple
       toggle:
         icon: material/brightness-4
         name: Passa alla modalità chiara

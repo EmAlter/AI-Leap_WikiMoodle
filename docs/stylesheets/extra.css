@@ -7,6 +7,11 @@
   --tip-border: rgba(255, 255, 255, 0.15);
 }
 
+/* Inverte i colori degli SVG solo quando il tema scuro è attivo */
+[data-md-color-scheme="slate"] img[src$=".svg"] {
+  filter: invert(1) hue-rotate(180deg);
+}
+
 .term {
   position: relative;
   border-bottom: 1px dotted var(--md-accent-fg-color);
