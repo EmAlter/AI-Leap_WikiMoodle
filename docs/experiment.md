@@ -11,7 +11,7 @@ In UML è una relazione strutturale di tipo "tutto-parte" molto forte, in cui la
 * <span class="term">**Aggregazione** <span class="tip"><strong>Aggregazione</strong><br>
 In UML è una relazione strutturale di tipo "tutto-parte" debole, in cui la classe contenitore fa riferimento agli oggetti contenuti, ma non ne controlla il ciclo di vita, i quali possono esistere in modo indipendente.<br>
 </span> </span> 
-:material-arrow-right-thin: una sperimentazione può avere una o più [valutazioni](evaluation.md) associate
+:material-arrow-right-thin: una sperimentazione può avere uno o più [risultati](results.md) associate
 * <span class="term">**Associazione** <span class="tip"><strong>Associazione</strong><br>
 In UML è una relazione strutturale di tipo "peer-to-peer", in cui le classi coinvolte comunicano e collaborano tra loro, ma non esiste alcun vincolo gerarchico o di ciclo di vita tra gli oggetti, i quali rimangono totalmente indipendenti.<br>
 </span> </span>  :material-arrow-right-thin: una sperimentazione ha associate una o più [classi](class.md) di utenti

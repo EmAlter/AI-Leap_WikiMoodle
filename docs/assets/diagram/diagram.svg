@@ -177,8 +177,8 @@
     /></g
     ><g transform="translate(1510,980)"
     ><rect fill="none" x="0.5" width="158.5" height="128.5" y="0.5" clip-path="url(#clipPath3)"
-      /><text x="43" font-size="14px" y="17.975" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >Valutazione</text
+      /><text x="52" font-size="14px" y="17.975" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
+      >Risultato</text
       ><path fill="none" d="M1 23.975 L159 23.975" clip-path="url(#clipPath3)"
     /></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(1500,1310)" stroke-opacity="0" stroke="rgb(255,255,255)"
@@ -541,7 +541,7 @@
     ><path fill="none" d="M220.5 440.5 L220.5 10.5" clip-path="url(#clipPath15)"
       /><path fill="none" d="M220.5 10.5 L10.5 10.5" clip-path="url(#clipPath15)"
       /><text x="224" font-size="14px" y="127.9875" clip-path="url(#clipPath15)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >riferita a ▲</text
+      >riferito a ▲</text
       ><text x="224" font-size="14px" y="424" clip-path="url(#clipPath15)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >1</text
       ><text x="29" font-size="14px" y="23.975" clip-path="url(#clipPath15)" font-family="sans-serif" stroke="none" xml:space="preserve"

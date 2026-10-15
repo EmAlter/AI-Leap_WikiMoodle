@@ -33,13 +33,15 @@ nav:
       - Utente: user.md
     - Gestire le Classi:
       - Classe: class.md
+    - Visualizzare i Risultati:
+      - Risultato: results.md
   - Esempio guidato:
     - Introduzione: guided_example.md
     - Esempio di Attività: guided_example_activity.md
     - Esempio di Ruolo, Classe e Utente: guided_example_role_class_user.md
     - Esempio di Sperimentazione: guided_example_experiment.md
   
-  - Albero: tree.md
+  # - Albero: tree.md  rimosso perché non più necessario
   
 plugins:
   - search

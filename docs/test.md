@@ -3,7 +3,7 @@
     * **Visualizza:** :material-account-hard-hat: Progettista, :material-shield-account: Moderatore, :material-account: Testato
 
 Nel progetto concettuale un test è lo strumento attraverso il quale vengono somministrate le attività ai testati per poter, successivamente, raccogliere le risposte.<br>
-Un test è costituito da una o più [attività](activity.md), appartiene a un [corso](course.md) e produce una [valutazione](evaluation.md) per ogni testato che lo completa.
+Un test è costituito da una o più [attività](activity.md), appartiene a un [corso](course.md) e produce un [risultato](results.md) per ogni testato che lo completa.
 
 <p align="center">
   <img src="../assets/images/test.svg" alt="Test">
