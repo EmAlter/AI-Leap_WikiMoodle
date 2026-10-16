@@ -1,4 +1,4 @@
-# AI-LEAP: Digitalizzazione di Sperimentazioni in Moodle
+# AI-LEAP: Digitalizzazione di Percorsi AI in Moodle
 
 [![Logo](docs/assets/images/logo_full.png)](https://ai-leap.di.unito.it/)
 
