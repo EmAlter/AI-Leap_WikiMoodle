@@ -67,8 +67,7 @@ La seguente sezione permette di scaricare i ruoli, già preimpostati, degli atto
 [:material-download: Progettista](assets/files/progettista.xml){: .md-button .md-button--primary }
 [:material-download: Moderatore](assets/files/moderatore.xml){: .md-button .md-button--primary }
 [:material-download: Testato](assets/files/testato.xml){: .md-button .md-button--primary }
-
-[:material-download: Scarica il plugin](assets/files/tokenlogin.zip){: .md-button .md-button--primary }
+[:material-download: Esperto](assets/files/esperto.xml){: .md-button .md-button--primary }
 
 
 Una volta scaricati i file XML dei ruoli, i passi da seguire per importarli direttamente su Moodle sono:
