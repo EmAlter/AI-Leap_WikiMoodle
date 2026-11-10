@@ -42,8 +42,6 @@ nav:
     - Esempio di Sperimentazione: guided_example_experiment.md
     - Esempio di Risultati: guided_example_results.md
   
-  # - Albero: tree.md  rimosso perché non più necessario
-  
 plugins:
   - search
   - callouts
