@@ -1,0 +1,18 @@
+#palette-picker { position: relative; display: flex; align-items: center; }
+#palette-picker > button { cursor: pointer; }
+
+.palette-menu {
+  position: absolute; top: 100%; right: 0; z-index: 10;
+  display: grid; grid-template-columns: repeat(5, 1.6rem); gap: .5rem;
+  padding: .7rem; border-radius: .3rem;
+  background: var(--md-default-bg-color);
+  box-shadow: var(--md-shadow-z3);
+}
+.palette-menu[hidden] { display: none; }
+
+.palette-swatch {
+  width: 1.6rem; height: 1.6rem; padding: 0; cursor: pointer;
+  border: 2px solid var(--md-default-bg-color); border-radius: 50%;
+  outline: 1px solid var(--md-default-fg-color--lighter);
+}
+.palette-swatch:hover { transform: scale(1.15); }
