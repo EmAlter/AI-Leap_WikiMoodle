@@ -53,7 +53,7 @@ plugins:
       video_autoplay: True
       video_loop: True
       video_muted: True
-      video_controls: False
+      video_controls: True
 
 markdown_extensions:
   - abbr
