@@ -16,7 +16,7 @@ Un'applicazione kiosk risolve questo problema, perché è un software che permet
 
 ---
 ### Download risorse
-1. Scaricare l’ultima versione di Free Kiosk dal sito ufficiale:<br><https://github.com/RushB-fr/freekiosk>
+1. Scaricare Free Kiosk dal sito ufficiale:<br><https://github.com/RushB-fr/freekiosk> (la versione utilizzata per il progetto è la **v2.0.0**)
 
 2. Scaricare il pacchetto ADB (Android Debug Bridge) dal sito ufficiale:<br><https://developer.android.com/studio/releases/platform-tools>
 
@@ -59,12 +59,16 @@ Una volta riavviato il tablet, Free Kiosk si avvierà automaticamente chiedendo 
 
 Alla fine della configurazione, scorrere in fondo al menù e premere il pulsante **Save**, a questo punto Free Kiosk mostrerà la pagina web inserita.
 
+Un'alternativa per configurare l'app è quella di importare la configurazione da un tablet già impostato precedentemente, per farlo è necessario andare in **Settings > Advanced > Export/Import Settings** e importare il seguente file JSON:
+
+[:material-download: Scarica il backup](assets/files/backup.zip){: .md-button .md-button--primary }
+
 ---
 ### Informazioni aggiuntive
 > [!Attenzione]
-> Le seguenti informazioni sono valide per la versione dell'app **v1.2.19** e potrebbero variare in futuro.
+> Le seguenti informazioni sono valide per la versione dell'app **v2.0.0** e potrebbero variare in futuro.
 
-Per uscire dalla modalità kiosk, l'app è impostata di default premendo 5 volte in qualsiasi punto dello schermo e inserendo la password inserita al primo avvio. La password può essere modificata in **Settings > General > Password**
+Per uscire dalla modalità kiosk, l'app è impostata di default premendo 5 volte in qualsiasi punto dello schermo e inserendo la password inserita al primo avvio (di default la password è **1234**). La password può essere modificata in **Settings > General > Password**
 
 Per rimuovere l'amministrazione del dispositivo da parte di Free Kiosk, è necessario andare in **Settings > Advanced > Remove Device Owner**.
 
