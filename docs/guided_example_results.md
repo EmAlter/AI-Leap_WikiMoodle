@@ -6,4 +6,4 @@ Questa sezione mostra come visualizzare i risultati di un test e come esportarli
 ## Visualizzare i risultati di un test
 ![type:video](assets/videos/results.mp4)
 
-I dati possono essere scaricati in diversi formati, come mostrato nel video sopra, e successivamente analizzati con strumenti esterni.
+I dati possono essere scaricati in diversi formati (es. CSV o Excel), come mostrato nel video sopra, e successivamente analizzati con strumenti esterni.

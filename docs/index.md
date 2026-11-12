@@ -1,7 +1,7 @@
 # Introduzione alla Wiki
 Benvenuti nella documentazione tecnica del sistema di digitalizzazione per Moodle.
 
-Questa wiki fornisce le linee guida, i modelli di dominio e gli esempi pratici necessari per la configurazione e l'utilizzo del sistema. È pensata per supportare i diversi ruoli (Progettista, Moderatore, Esperto, Testato) nella creazione e gestione di corsi, test e sperimentazioni didattiche.
+Questa wiki fornisce le linee guida, i modelli di dominio e gli esempi pratici necessari per la configurazione e l'utilizzo del sistema. È pensata per supportare i diversi ruoli (Progettista:material-account-hard-hat:, Moderatore:material-shield-account:, Esperto:material-account-tie:, Testato:material-account:) nella creazione e gestione di corsi, test e sperimentazioni didattiche.
 
 ### Il contesto: Progetto AI-LEAP
 

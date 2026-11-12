@@ -2,7 +2,7 @@
     * **Gestisce (crea, modifica, elimina):** :material-account-hard-hat: Progettista
     * **Visualizza:** :material-account-hard-hat: Progettista, :material-account-tie: Esperto
 
-Nel progetto concettuale, un intervento rappresenta del contenuto didattico che viene presentato al testato:material-account: da parte dell'esperto:material-account-tie:.<br>
+Nel progetto concettuale, un intervento rappresenta del contenuto didattico che viene presentato al Testato:material-account: da parte dell'Esperto:material-account-tie:.<br>
 È costituito da una o più [attività](activity.md) e fa parte di un [corso](course.md).
 
 <p align="center">
@@ -11,7 +11,7 @@ Nel progetto concettuale, un intervento rappresenta del contenuto didattico che 
 
 
 ## Moodle
-In Moodle, un intervento viene creato e gestito come un [Test](test.md), semplicemente le attività contenute in esso non saranno eseguite, ma saranno visualizzate come contenuto didattico da parte dell'esperto:material-account-tie:<br>
+In Moodle, un intervento viene creato e gestito come un [Test](test.md), semplicemente le attività contenute in esso non saranno eseguite, ma saranno visualizzate come contenuto didattico da parte dell'Esperto:material-account-tie:<br>
 
 > [!IMPORTANTE]
 > In fase di creazione e gestione di un intervento, non sono importanti i campi che riguardano la valutazione o il punteggio, bisogna rispettare soltanto l'ordine delle attività e la loro visualizzazione.
@@ -29,7 +29,7 @@ I passi da seguire sono:
         - **`Nome`** :material-arrow-right-thin: rappresenta il nome dell'intervento, che deve essere univoco all'interno del corso
         - **`Descrizione`** :material-arrow-right-thin: breve descrizione dell'intervento
     * **Impaginazione**
-        - **`Metodo di navigazione`** :material-arrow-right-thin: in che modo l'esperto può navigare tra le domande dell'intervento
+        - **`Metodo di navigazione`** :material-arrow-right-thin: in che modo l'Esperto:material-account-tie: può navigare tra le domande dell'intervento
     * **Comportamento domanda**
         - **`Alternative in modo casuale`** :material-arrow-right-thin: se le domande dell'intervento devono essere mostrate in ordine casuale o meno
     * **Condizioni per l'accesso**

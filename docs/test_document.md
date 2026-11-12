@@ -12,18 +12,18 @@ Nel progetto concettuale, un documento di test è la versione descrittiva di un 
 > Il documento di test fa riferimento a un unico test ed è vincolante, ovvero se il test viene modificato, anche il documento di test dovrà essere aggiornato.
 
 ## Moodle
-Per integrare al meglio il concetto di documento di test in Moodle, come elemento che aggiunge informazioni alle attività di a un test, le opzioni possibili sono tre:
+Per integrare al meglio il concetto di documento di test in Moodle, come elemento che aggiunge informazioni alle attività di a un test, le opzioni possibili valutate sono state tre:
 
-1. Creare un duplicato di un test esistente, aggiungere le informazioni in più necessarie e renderlo visibile solo al moderatore:material-shield-account:;
+1. Creare un duplicato di un test esistente, aggiungere le informazioni in più necessarie e renderlo visibile solo al Moderatore:material-shield-account:;
 2. Creare un 
 <span class="term">**modulo** <span class="tip"><strong>Modulo</strong><br>
 In Moodle, un modulo è un blocco funzionale che serve ad aggiungere contenuti, risorse o attività didattiche all'interno di un corso (sperimentazione)<br>
 </span> </span>
-di tipo file, dove il progettista:material-account-hard-hat: può caricare un documento pre-compilato in formato PDF o Word contenente le informazioni aggiuntive;
-3. Aggiungere le informazioni direttamente all'interno del test, ma renderle visibili solo al moderatore:material-shield-account:.
+di tipo file, dove il Progettista:material-account-hard-hat: può caricare un documento pre-compilato in formato PDF, Word o altro formato contenente le informazioni aggiuntive;
+3. Aggiungere le informazioni direttamente all'interno del test, ma renderle visibili solo al Moderatore:material-shield-account:.
 
-Sebbene le prime due opzioni (1. e 2.) siano valide, rischiano, però, di raddoppiare il lavoro del progettista:material-account-hard-hat: e di creare confusione, soprattutto, lavorando con molti test contemporaneamente.<br>
-La terza opzione (3.), invece, sebbene non rispecchi pienamente il concetto di documento di test, si integra perfettamente in Moodle rendendo più semplice l'inserimento (injection) di informazioni aggiuntive all'interno di un test e la loro visualizzazione da parte del moderatore:material-shield-account:.<br>
+Sebbene le prime due opzioni (1. e 2.) fossero valide, avrebbero rischiato, però, di raddoppiare il lavoro del Progettista:material-account-hard-hat: e di creare confusione, soprattutto, lavorando con molti test contemporaneamente.<br>
+La terza opzione (3.), invece, sebbene non rispecchi pienamente il concetto di documento di test, si integra perfettamente in Moodle rendendo più semplice l'inserimento (injection) di informazioni aggiuntive all'interno di un test e la loro visualizzazione da parte del Moderatore:material-shield-account:.<br>
 Per questo motivo, **la terza opzione è stata scelta come soluzione**.
 
 > [!Importante]
@@ -34,7 +34,7 @@ Per questo motivo, **la terza opzione è stata scelta come soluzione**.
 > [!ATTENZIONE]
 > Prima di iniziare, è obbligatorio che su Moodle sia stato installato il plugin [FilterCodes](plugin.md#filtercodes).
 
-Il progettista:material-account-hard-hat: deve essere all'interno di un [test](test.md) esistente.
+Il Progettista:material-account-hard-hat: deve essere all'interno di un [test](test.md) esistente.
 
 I passi da seguire sono:
 
@@ -42,7 +42,7 @@ I passi da seguire sono:
 1. Nella pagina che si aprirà, le informazioni potranno essere aggiunte in tutti i campi di testo 
 <span class="term">**TinyMCE** <span class="tip"><strong>TinyMCE</strong><br> 
 TinyMCE è un  editor di testo rich-text in formato WYSIWYG (What You See Is What You Get, cioè "quello che vedi è quello che ottieni") che permette agli sviluppatori di aggiungere funzioni di scrittura avanzate ai siti web e alle applicazioni. 
-</span> </span> (la dicitura "TinyMCE" è visibile in basso a destra del campo di testo). Ecco come strutturare un'informazione visibile solo al moderatore:material-shield-account::
+</span> </span> (la dicitura "TinyMCE" è visibile in basso a destra del campo di testo). Ecco come strutturare un'informazione visibile solo al Moderatore:material-shield-account::
 
     ```
     {ifcustomrole moderatore}
@@ -65,8 +65,8 @@ TinyMCE è un  editor di testo rich-text in formato WYSIWYG (What You See Is Wha
         ```
         {ifcustomrole moderatore}
 
-        Le successive domande non hanno risposte giuste o sbagliate, l'intera attività serve a capire come il testato percepisce le proprie capacità di apprendimento e le motivazioni allo studio.<br>
-        Il testato non deve essere influenzato dalle risposte che darà, quindi il moderatore deve evitare di dare suggerimenti o commenti durante lo svolgimento del test.
+        Le successive domande non hanno risposte giuste o sbagliate, l'intera attività serve a capire come il Testato percepisce le proprie capacità di apprendimento e le motivazioni allo studio.<br>
+        Il Testato non deve essere influenzato dalle risposte che darà, quindi il Moderatore deve evitare di dare suggerimenti o commenti durante lo svolgimento del test.
 
         {/ifcustomrole}
         ```
@@ -114,8 +114,8 @@ TinyMCE è un  editor di testo rich-text in formato WYSIWYG (What You See Is Wha
     === "Cosa vede il Moderatore:material-shield-account:"
 
         **Istruzioni**: Leggi ogni frase riportata qui sotto e poi fai una crocetta solo nel quadratino che indica quanto sei d'accordo con l'affermazione.<br>
-        Le successive domande non hanno risposte giuste o sbagliate, l'intera attività serve a capire come il testato percepisce le proprie capacità di apprendimento e le motivazioni allo studio.<br>
-        Il testato non deve essere influenzato dalle risposte che darà, quindi il moderatore deve evitare di dare suggerimenti o commenti durante lo svolgimento del test.
+        Le successive domande non hanno risposte giuste o sbagliate, l'intera attività serve a capire come il Testato percepisce le proprie capacità di apprendimento e le motivazioni allo studio.<br>
+        Il Testato non deve essere influenzato dalle risposte che darà, quindi il Moderatore deve evitare di dare suggerimenti o commenti durante lo svolgimento del test.
 
         **Domanda 1**: La tua intelligenza è qualcosa di te che non puoi cambiare.
         

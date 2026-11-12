@@ -24,7 +24,7 @@ Ogni sperimentazione ha diversi attributi che la identificano:
 
 * **Nome** :material-arrow-right-thin: rappresenta il nome della sperimentazione, che deve essere univoco all'interno del progetto
 * **Descrizione** :material-arrow-right-thin: rappresenta la descrizione della sperimentazione, cioè il motivo per cui è stata creata e il suo obiettivo
-* **Anonimità** :material-arrow-right-thin: rappresenta se la sperimentazione è anonima o meno, ovvero se i dati raccolti saranno associati all'identità del testato o meno
+* **Anonimità** :material-arrow-right-thin: rappresenta se la sperimentazione è anonima o meno, ovvero se i dati raccolti saranno associati all'identità del Testato:material-account: o meno
 
 ## Moodle
 In Moodle non esiste un concetto di Sperimentazione, l'elemento che più si avvicina è il Corso.
@@ -86,7 +86,7 @@ I passi da seguire per creare una nuova sperimentazione sono:
 
     > [!ATTENZIONE]
     > In fase di creazione della sperimentazione, i campi che Moodle propone sono molti di più di quelli che verranno elencati qui sotto, tuttavia per il progetto concettuale bastano soltanto quelli descritti.<br>
-    > Gli altri campi possono essere lasciati (anche se obbligatori) con le impostazioni di default oppure adattarli ad eventuali eccezioni che il progettista ritiene necessarie per la sperimentazione stessa.
+    > Gli altri campi possono essere lasciati (anche se obbligatori) con le impostazioni di default oppure adattarli ad eventuali eccezioni che il Progettista:material-account-hard-hat: ritiene necessarie per la sperimentazione stessa.
 
     * **Generale**
         - **`Titolo del corso`** :material-arrow-right-thin: rappresenta il nome della sperimentazione
@@ -110,7 +110,7 @@ I passi da seguire per creare una nuova sperimentazione sono:
 >    * **Descrizione**
 >        - **`Introduzione al corso`** :material-arrow-right-thin: La seguente sperimentazione ha come obiettivo quello di valutare l'efficacia di un intervento volto a migliorare la comprensione del Machine Learning da parte dei testati, in particolare per quanto riguarda il riconoscimento di modelli tipici e la valutazione di stili cognitivi.
 >    * **Gruppi**
->        - **`Modalità gruppo`** :material-arrow-right-thin: Gruppi separati, ogni testato appartiene al gruppo assegnatogli e non può vedere i contenuti degli altri gruppi
+>        - **`Modalità gruppo`** :material-arrow-right-thin: Gruppi separati, ogni Testato:material-account: appartiene al gruppo assegnatogli e non può vedere i contenuti degli altri gruppi
 >        - **`Forza modalità gruppo`** :material-arrow-right-thin:
 
             * No, se si prevede di creare, oltre ai test, moduli Moodle (es. Feedback) che saranno compilati da tutti indipendentemente dal gruppo di appartenenza

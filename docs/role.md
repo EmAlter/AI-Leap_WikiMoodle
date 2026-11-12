@@ -6,7 +6,7 @@ Il ruolo è un insieme di autorizzazioni (o permessi) che definiscono le azioni 
 Un utente che ottiene un determinato ruolo, acquisisce le responsabilità associata all'attore identificato nella fase di progettazione.
 
 > [!ESEMPIO]
-> Nel progetto concettuale è stato individuato l'attore **Testato:material-account:** come colui che deve svolgere i test, quindi concettualmente un utente che ottiene il ruolo di Testato, acquisisce le responsabilità associate a questo attore e, di conseguenza, potrà svolgere i test.
+> Nel progetto concettuale è stato individuato l'attore **Testato:material-account:** come colui che deve svolgere i test, quindi concettualmente un utente che ottiene il ruolo di Testato:material-account:, acquisisce le responsabilità associate a questo attore e, di conseguenza, potrà svolgere i test.
 
 <p align="center">
   <img src="../assets/images/role.svg" alt="Ruoli">
@@ -16,7 +16,7 @@ Un utente che ottiene un determinato ruolo, acquisisce le responsabilità associ
 Il concetto di **ruolo** in Moodle è identico a quello del progetto astratto.
 
 > [!IMPORTANTE]
-> Il **Progettista** in Moodle è rappresentato dal ruolo di **Amministratore**, che viene generato e assegnato automaticamente al momento dell'installazione del sistema, quindi non è necessario creare un nuovo ruolo per esso.
+> Il **Progettista:material-account-hard-hat:** in Moodle è rappresentato dal ruolo di **Amministratore**, che viene generato e assegnato automaticamente al momento dell'installazione del sistema, quindi non è necessario creare un nuovo ruolo per esso.
 
 > [!TIP]
 > È possibile importare i ruoli già preimpostati degli attori definiti nel progetto concettuale tramite file XML, in modo da non doverli creare manualmente (vedi [Scaricare i ruoli e importarli su Moodle](csv.md#scaricare-i-ruoli-e-importarli-su-moodle)).
@@ -34,10 +34,10 @@ Di seguito i passi per creare un nuovo ruolo in Moodle:
 1. Cliccare su **Aggiungi un ruolo**
 1. Inserire gli attributi che identificano il ruolo:
 
-    * **Nome abbreviato** :material-arrow-right-thin: es. "moderatore" rappresenta l'identificativo del ruolo
-    * **Nome personalizzato** :material-arrow-right-thin: es. "Moderatore" rappresenta il nome del ruolo che sarà visibile agli utenti
+    * **Nome abbreviato** :material-arrow-right-thin: es. "Moderatore:material-shield-account:" rappresenta l'identificativo del ruolo
+    * **Nome personalizzato** :material-arrow-right-thin: es. "Moderatore:material-shield-account:" rappresenta il nome del ruolo che sarà visibile agli utenti
     * **Descrizione personalizzata** :material-arrow-right-thin: es. "Ruolo che permette di moderare i test" rappresenta la descrizione del ruolo che sarà visibile agli utenti
-    * **Ruolo archetipo (opzionale)** :material-arrow-right-thin: es. "Docente (non editor)" un archetipo rappresenta un ruolo predefinito che può essere utilizzato come modello per quello nuovo, in questo caso il ruolo di Docente (non editor) è il più simile a quello di Moderatore
+    * **Ruolo archetipo (opzionale)** :material-arrow-right-thin: es. "Docente (non editor)" un archetipo rappresenta un ruolo predefinito che può essere utilizzato come modello per quello nuovo, in questo caso il ruolo di Docente (non editor) è il più simile a quello di Moderatore:material-shield-account:
     * **Contesti dove questo ruolo può essere assegnato** :material-arrow-right-thin: es. "Sistema" rappresenta il contesto in cui il ruolo può essere assegnato, in questo caso il contesto di Sistema permette di assegnare il ruolo a livello globale, quindi indipendentemente dalla Sperimentazione e/o dal Corso selezionato.
 
 1. Una volta inseriti gli attributi, si devono assegnare le autorizzazioni (permessi) al ruolo spuntando **consenti** sulle quelle desiderate.

@@ -6,8 +6,8 @@ Per comprendere meglio i riferimenti tra i concetti astratti del progetto svilup
     | ----------- | ----------- |
     | [Sperimentazione](experiment.md) | Corso |
     | [Corso](course.md) | Sezione di un Corso |
-    | [Test](test.md) | Modulo Test |
-    | [Intervento](intervention.md) | Modulo Test |
+    | [Test](test.md) | Modulo Quiz |
+    | [Intervento](intervention.md) | Modulo Quiz |
 
 === "Gestione delle Attività"
 

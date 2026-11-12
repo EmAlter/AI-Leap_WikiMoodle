@@ -128,8 +128,8 @@ Riassumendo, le colonne sono:
 > [!ESEMPIO]
 > ```csv
 > username,firstname,lastname,email,password,sysrole1,cohort1,profile_field_datanascita
-> TokenMR,Mario,Rossi,emailfittizia.mariorossi@email.it,mr1998,testato,classe_3a,1998-01-01
-> TokenAP,Artù,Pendragon,emailfittizia.artupendragon@email.it,ap1999,moderatore,classe_2b,1999-02-02
+> TokenMR,Mario,Rossi,emailfittizia.mariorossi@email.it,mr1998,Testato:material-account:,classe_3a,1998-01-01
+> TokenAP,Artù,Pendragon,emailfittizia.artupendragon@email.it,ap1999,Moderatore:material-shield-account:,classe_2b,1999-02-02
 > ```
 > > [!ATTENZIONE]
 > > Il campo `profile_field_datanascita`, essendo un campo di tipo Data e Ora, deve rispettare il formato `YYYY-MM-DD` (anno-mese-giorno), altrimenti Moodle non riuscirà a interpretarlo correttamente.

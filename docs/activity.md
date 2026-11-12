@@ -5,7 +5,7 @@
 Nel progetto concettuale un'attività ha diversi attributi che la identificano:
 
 * **Nome** :material-arrow-right-thin: rappresenta il nome dell'attività, che deve essere univoco all'interno del progetto
-* **Istruzioni** :material-arrow-right-thin: rappresentano le istruzioni che il testato deve seguire per completare l'attività
+* **Istruzioni** :material-arrow-right-thin: rappresentano le istruzioni che il Testato:material-account: deve seguire per completare l'attività
 * **Tipo** :material-arrow-right-thin: rappresenta la tipologia di appartenenza dell'attività (es. Riconoscere un modello tipico, Stile cognitivo ecc.)
 
 Essa è costituita da una o più [domande](questions_and_responses.md) a loro volta costituite da una o più [risposte](questions_and_responses.md) secondo il seguente schema:

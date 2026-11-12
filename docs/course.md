@@ -3,7 +3,6 @@
     * **Visualizza:** :material-account-hard-hat: Progettista, :material-shield-account: Moderatore, :material-account-tie: Esperto
 
 Nel progetto concettuale un corso rappresenta la metodologia secondo la quale verranno eseguiti i test e presentati gli interventi.<br>
-L'obiettivo dello studio, infatti, è quello di valutare l'efficacia di un determinato intervento
 
 <p align="center">
   <img src="../assets/images/course.svg" alt="Corso">
