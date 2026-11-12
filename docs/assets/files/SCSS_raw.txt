@@ -2,58 +2,92 @@
    1. RESET E PULIZIA INTERFACCIA MOODLE
    ========================================================================== */
 
-#page-mod-quiz-attempt #page-wrapper,
-#page-mod-quiz-attempt #page,
-#page-mod-quiz-attempt #region-main {
-    max-width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-/* Aggiunti #page-navbar e .breadcrumb alla lista degli elementi da nascondere */
+/* Elementi distrattivi */
 #page-mod-quiz-attempt nav.navbar,
+#page-mod-quiz-attempt .primary-navigation,
+#page-mod-quiz-attempt .secondary-navigation,
+#page-mod-quiz-attempt #page-header,
 #page-mod-quiz-attempt .activity-header,
 #page-mod-quiz-attempt .activity-navigation,
-#page-navbar,
-.breadcrumb,
-#page-footer,
+#page-mod-quiz-attempt #page-navbar,
+#page-mod-quiz-attempt .breadcrumb,
+#page-mod-quiz-attempt #page-footer,
+#page-mod-quiz-attempt .drawer,
 #page-mod-quiz-attempt .drawer-toggles,
-.quizinfo,
+#page-mod-quiz-attempt #mod_quiz_navblock,
+#page-mod-quiz-attempt .btn-footer-popover,
+#page-mod-quiz-attempt .quizinfo,
 #page-mod-quiz-attempt .que .info,
-input[name="previous"] {
+#page-mod-quiz-attempt input[name="previous"] {
     display: none !important;
 }
 
+/* Azzera margini, padding e altezze minime lasciati dal tema
+   (è questo che creava la "pagina bianca" sopra la domanda) */
+body#page-mod-quiz-attempt {
+    padding-top: 0 !important;
+    background: #f4f7fa;
+}
+
+#page-mod-quiz-attempt #page,
+#page-mod-quiz-attempt #page.drawers,
+#page-mod-quiz-attempt #page-wrapper,
+#page-mod-quiz-attempt #page-content,
+#page-mod-quiz-attempt #region-main-box,
+#page-mod-quiz-attempt #region-main,
+#page-mod-quiz-attempt .main-inner,
+#page-mod-quiz-attempt #topofscroll {
+    max-width: 100% !important;
+    width: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
 /* ==========================================================================
-   2. CONTENITORE PRINCIPALE (A Colonna)
+   2. CONTENITORE PRINCIPALE
    ========================================================================== */
-#responseform {
+
+#page-mod-quiz-attempt #responseform {
     padding: 15px;
     box-sizing: border-box;
 }
 
-#responseform > div {
+#page-mod-quiz-attempt #responseform > div {
     display: flex;
-    flex-direction: column; /* Impila il blocco colonne e il blocco pulsanti */
+    flex-direction: column;
     gap: 15px;
-    height: calc(100vh - 30px); 
 }
 
-/* Nuovo Wrapper che gestisce le due colonne orizzontali */
+/* ==========================================================================
+   3. LAYOUT A DUE COLONNE (solo se presenti descrizione + domande)
+   ========================================================================== */
+
+/* Su schermi larghi: pagina a altezza fissa, le colonne scorrono da sole */
+@media (min-width: 901px) {
+    body.quiz-split {
+        overflow: hidden;
+    }
+
+    body.quiz-split #responseform > div {
+        height: calc(100vh - 30px);   /* fallback */
+        height: calc(100dvh - 30px);
+    }
+}
+
 .quiz-columns-wrapper {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    flex: 1; /* Permette al wrapper di occupare tutto lo spazio disponibile in altezza */
-    min-height: 0; /* Regola fondamentale di Flexbox per impedire l'overflow fuori dal container padre */
+    flex: 1;
+    min-height: 0;
 }
 
-/* ==========================================================================
-   3. PANNELLO SINISTRO E DESTRO
-   ========================================================================== */
 .quiz-left-pane {
     flex: 0 0 55%;
-    height: 100%;
     overflow-y: auto;
     background: #fff;
     border-radius: 20px;
@@ -62,51 +96,84 @@ input[name="previous"] {
     box-sizing: border-box;
 }
 
+.quiz-right-pane {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Le descrizioni non hanno una "card" propria: la card è il pannello */
 .quiz-left-pane .que.description {
     border: none !important;
     background: transparent !important;
     box-shadow: none !important;
     padding: 0 !important;
-    margin: 0 !important;
-}
-
-.quiz-right-pane {
-    flex: 1;
-    height: 100%;
-    overflow-y: auto;
-    padding: 10px; 
-    box-sizing: border-box;
+    margin: 0 0 24px 0 !important;
 }
 
 /* ==========================================================================
-   BARRA PULSANTI FISSA IN BASSO
+   4. LAYOUT A COLONNA SINGOLA (anteprima di una domanda, pagine senza descrizione)
    ========================================================================== */
+
+.quiz-single-pane {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.quiz-single-pane .que.description {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   5. MOBILE / SCHERMI STRETTI: colonne impilate, scroll normale della pagina
+   ========================================================================== */
+
+@media (max-width: 900px) {
+    .quiz-columns-wrapper {
+        flex-direction: column;
+    }
+    .quiz-left-pane,
+    .quiz-right-pane {
+        flex: 0 0 auto;
+        overflow: visible;
+    }
+}
+
+/* ==========================================================================
+   6. BARRA PULSANTI
+   ========================================================================== */
+
 .quiz-fixed-submit {
-    flex: 0 0 auto; /* Impedisce alla barra di comprimersi */
-    display: flex;
-    justify-content: flex-end; /* Spinge il pulsante verso destra */
-    padding-right: 10px;
+    flex: 0 0 auto;
+    display: flex !important;
+    visibility: visible !important;
+    justify-content: flex-end;
+    padding: 10px 10px 0 0;
+    position: sticky;      /* resta sempre visibile anche nel layout a colonna singola */
+    bottom: 0;
+    z-index: 10;
 }
 
-.quiz-fixed-submit .btn-secondary, 
-.quiz-fixed-submit .btn-primary, 
-.quiz-fixed-submit .mod_quiz-next-nav {
-    border-radius: 14px !important; 
-    padding: 12px 35px !important;
-    font-size: 1.05rem !important; 
-    min-height: 48px;
-    margin: 0 !important; /* Rimuove i margini pregressi */
+#page-mod-quiz-attempt .mod_quiz-prev-nav,
+#page-mod-quiz-attempt input[name="previous"] {
+    display: none !important;
 }
 
 /* ==========================================================================
-   5. STILE DELLE SINGOLE DOMANDE
+   7. STILE DELLE SINGOLE DOMANDE
    ========================================================================== */
 
-.que .content { 
-    margin-left: 0 !important; 
+#page-mod-quiz-attempt .que .content {
+    margin-left: 0 !important;
 }
 
-.que:not(.description) {
+#page-mod-quiz-attempt .que:not(.description) {
     background: #eaf4fb;
     border-radius: 20px;
     padding: 28px 32px;
@@ -114,50 +181,101 @@ input[name="previous"] {
     box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
 
-.qtext { 
-    font-size: 1.15rem; 
-    line-height: 1.6; 
-    margin-bottom: 18px; 
+#page-mod-quiz-attempt .qtext {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
 }
 
-.answer .r0, .answer .r1 {
-    display: flex; 
-    align-items: center; 
+/* Immagini nel testo della domanda: mai oltre il pannello */
+#page-mod-quiz-attempt .qtext img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Risposte delle domande normali (scelta multipla/singola, vero/falso) --- */
+#page-mod-quiz-attempt .que:not(.multianswer) .answer .r0,
+#page-mod-quiz-attempt .que:not(.multianswer) .answer .r1 {
+    display: flex;
+    align-items: center;
     gap: 10px;
-    padding: 12px 18px; 
+    padding: 12px 18px;
     margin: 6px 8px 6px 0;
-    border-radius: 999px; 
-    background: #ffffff;
-    border: 2px solid #dbe7f0; 
+    border-radius: 999px;
+    background: #fff;
+    border: 2px solid #dbe7f0;
     transition: all .15s ease;
 }
 
-.answer input[type="radio"] { 
-    width: 28px; 
-    height: 28px; 
-    accent-color: #4a90d9; 
-    margin: 0; 
-}
-
-.answer label { 
-    font-size: 1.05rem; 
-    cursor: pointer; 
-    margin-bottom: 0; 
-}
-
-.answer .r0:has(input:checked), 
-.answer .r1:has(input:checked) {
-    background: #dcecfb; 
-    border-color: #4a90d9; 
+#page-mod-quiz-attempt .que:not(.multianswer) .answer .r0:has(input:checked),
+#page-mod-quiz-attempt .que:not(.multianswer) .answer .r1:has(input:checked) {
+    background: #dcecfb;
+    border-color: #4a90d9;
     font-weight: 600;
 }
 
-/* Stile del pulsante "Avanti" situato a fine scorrimento */
-.btn-secondary, .btn-primary, .mod_quiz-next-nav {
-    border-radius: 14px !important; 
-    padding: 12px 28px !important;
-    font-size: 1.05rem !important; 
-    min-height: 48px;
-    display: block; 
-    margin-top: 20px;
+/* --- Radio e label (comuni a tutti i tipi) --- */
+#page-mod-quiz-attempt .answer input[type="radio"] {
+    width: 28px;
+    height: 28px;
+    accent-color: #4a90d9;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+#page-mod-quiz-attempt .answer label {
+    font-size: 1.05rem;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+/* --- Domande Cloze (multianswer) --- */
+#page-mod-quiz-attempt .que.multianswer table.answer,
+#page-mod-quiz-attempt .que.multianswer table.answer tbody {
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    border: 0;
+    margin: 0;
+}
+
+#page-mod-quiz-attempt .que.multianswer table.answer tr {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    padding: 8px 18px;
+    margin: 4px 0;
+    border-radius: 999px;
+    background: #fff;
+    border: 2px solid #dbe7f0;
+    transition: all .15s ease;
+}
+
+#page-mod-quiz-attempt .que.multianswer table.answer td {
+    display: flex;
+    align-items: center;
+    width: auto !important;
+    padding: 0 !important;
+    border: 0 !important;
+    white-space: nowrap;
+}
+
+#page-mod-quiz-attempt .que.multianswer table.answer tr:has(input:checked) {
+    background: #dcecfb;
+    border-color: #4a90d9;
+}
+
+#page-mod-quiz-attempt .que.multianswer table.answer tr:has(input:checked) label {
+    font-weight: 600;
+}
+
+/* Menu a tendina e campi di testo dentro le Cloze */
+#page-mod-quiz-attempt .que.multianswer select,
+#page-mod-quiz-attempt .que.multianswer input[type="text"] {
+    font-size: 1.05rem;
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 2px solid #dbe7f0;
+    background: #fff;
 }

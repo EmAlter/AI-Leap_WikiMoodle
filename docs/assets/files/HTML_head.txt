@@ -1,37 +1,61 @@
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    if (document.querySelector('#page-mod-quiz-attempt')) {
-        const container = document.querySelector('#responseform > div');
-        const description = document.querySelector('.que.description');
-        const otherQuestions = document.querySelectorAll('.que:not(.description)');
-        const submitNav = document.querySelector('.submitbtns');
+document.addEventListener("DOMContentLoaded", function () {
+    if (!document.querySelector('#page-mod-quiz-attempt')) return;
 
-        if (container && description && otherQuestions.length > 0) {
-            // 1. Crea il wrapper orizzontale per le due colonne
-            const columnsWrapper = document.createElement('div');
-            columnsWrapper.className = 'quiz-columns-wrapper';
+    const container = document.querySelector('#responseform > div');
+    if (!container || container.querySelector('.quiz-columns-wrapper, .quiz-single-pane')) return;
 
-            const leftColumn = document.createElement('div');
-            leftColumn.className = 'quiz-left-pane';
-            
-            const rightColumn = document.createElement('div');
-            rightColumn.className = 'quiz-right-pane';
+    // Rimuove del tutto (non solo nasconde) il pulsante "Pagina precedente"
+    document.querySelectorAll(
+        '#responseform [name="previous"], #responseform .mod_quiz-prev-nav'
+    ).forEach(el => el.remove());
 
-            // 2. Assembla l'albero del DOM
-            container.insertBefore(columnsWrapper, description);
-            columnsWrapper.appendChild(leftColumn);
-            columnsWrapper.appendChild(rightColumn);
+    const descriptions = Array.from(container.querySelectorAll('.que.description'));
+    const others = Array.from(container.querySelectorAll('.que:not(.description)'));
+    const all = Array.from(container.querySelectorAll('.que'));
+    if (all.length === 0) return;
 
-            // 3. Popola le colonne
-            leftColumn.appendChild(description);
-            otherQuestions.forEach(q => rightColumn.appendChild(q));
-            
-            // 4. Mantiene i pulsanti nel container principale (sotto il wrapper)
-            if (submitNav) {
-                container.appendChild(submitNav);
-                submitNav.classList.add('quiz-fixed-submit');
-            }
+    // Cerca il pulsante "Avanti" in tutta la pagina; se manca il contenitore, lo crea
+    let submitNav = document.querySelector('#responseform .submitbtns');
+    if (!submitNav) {
+        const next = document.querySelector(
+            '#responseform [name="next"], #responseform .mod_quiz-next-nav'
+        );
+        if (next) {
+            submitNav = document.createElement('div');
+            next.parentNode.insertBefore(submitNav, next);
+            submitNav.appendChild(next);
         }
+    }
+
+    const anchor = all[0];
+
+    if (descriptions.length > 0 && others.length > 0) {
+        document.body.classList.add('quiz-split');
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'quiz-columns-wrapper';
+        const left = document.createElement('div');
+        left.className = 'quiz-left-pane';
+        const right = document.createElement('div');
+        right.className = 'quiz-right-pane';
+
+        container.insertBefore(wrapper, anchor);
+        wrapper.append(left, right);
+        descriptions.forEach(d => left.appendChild(d));
+        others.forEach(q => right.appendChild(q));
+    } else {
+        document.body.classList.add('quiz-single');
+
+        const pane = document.createElement('div');
+        pane.className = 'quiz-single-pane';
+        container.insertBefore(pane, anchor);
+        all.forEach(q => pane.appendChild(q));
+    }
+
+    if (submitNav) {
+        container.appendChild(submitNav);
+        submitNav.classList.add('quiz-fixed-submit');
     }
 });
 </script>
