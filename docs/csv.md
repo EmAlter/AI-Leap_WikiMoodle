@@ -64,11 +64,10 @@ Riassumendo, le colonne sono:
 ## Scaricare i ruoli e importarli su Moodle
 La seguente sezione permette di scaricare i ruoli, già preimpostati, degli attori definiti nel progetto concettuale e importarli su Moodle tramite file XML.
 
-[:material-download: Progettista](assets/files/progettista.xml){: .md-button .md-button--primary }
-[:material-download: Moderatore](assets/files/moderatore.xml){: .md-button .md-button--primary }
-[:material-download: Testato](assets/files/testato.xml){: .md-button .md-button--primary }
-[:material-download: Esperto](assets/files/esperto.xml){: .md-button .md-button--primary }
-
+[:material-download: Progettista](assets/files/progettista.xml){: .md-button .md-button--primary download="progettista.xml" }
+[:material-download: Moderatore](assets/files/moderatore.xml){: .md-button .md-button--primary download="moderatore.xml" }
+[:material-download: Testato](assets/files/testato.xml){: .md-button .md-button--primary download="testato.xml" }
+[:material-download: Esperto](assets/files/esperto.xml){: .md-button .md-button--primary download="esperto.xml" }
 
 Una volta scaricati i file XML dei ruoli, i passi da seguire per importarli direttamente su Moodle sono:
 

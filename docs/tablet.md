@@ -61,7 +61,7 @@ Alla fine della configurazione, scorrere in fondo al menù e premere il pulsante
 
 Un'alternativa per configurare l'app è quella di importare la configurazione da un tablet già impostato precedentemente, per farlo è necessario andare in **Settings > Advanced > Export/Import Settings** e importare il seguente file JSON:
 
-[:material-download: Scarica il backup](assets/files/backup.zip){: .md-button .md-button--primary }
+[:material-download: Scarica il backup](assets/files/backup.json){: .md-button .md-button--primary download="backup.json" }
 
 ---
 ### Informazioni aggiuntive
