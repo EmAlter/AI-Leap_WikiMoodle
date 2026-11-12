@@ -6,7 +6,7 @@ Il ruolo è un insieme di autorizzazioni (o permessi) che definiscono le azioni 
 Un utente che ottiene un determinato ruolo, acquisisce le responsabilità associata all'attore identificato nella fase di progettazione.
 
 > [!ESEMPIO]
-> Nel progetto concettuale è stato individuato l'attore **Testato:material-account:** come colui che deve svolgere i test, quindi concettualmente un utente che ottiene il ruolo di Testato:material-account:, acquisisce le responsabilità associate a questo attore e, di conseguenza, potrà svolgere i test.
+> Nel progetto concettuale è stato individuato l'attore **Testato:material-account:** come colui che deve svolgere i test, quindi concettualmente un utente che ottiene questo ruolo, acquisisce le responsabilità associate all'attore e, di conseguenza, potrà svolgere i test.
 
 <p align="center">
   <img src="../assets/images/role.svg" alt="Ruoli">
@@ -34,8 +34,8 @@ Di seguito i passi per creare un nuovo ruolo in Moodle:
 1. Cliccare su **Aggiungi un ruolo**
 1. Inserire gli attributi che identificano il ruolo:
 
-    * **Nome abbreviato** :material-arrow-right-thin: es. "Moderatore:material-shield-account:" rappresenta l'identificativo del ruolo
-    * **Nome personalizzato** :material-arrow-right-thin: es. "Moderatore:material-shield-account:" rappresenta il nome del ruolo che sarà visibile agli utenti
+    * **Nome abbreviato** :material-arrow-right-thin: es. "Moderatore" rappresenta l'identificativo del ruolo
+    * **Nome personalizzato** :material-arrow-right-thin: es. "moderatore" rappresenta il nome del ruolo che sarà visibile agli utenti
     * **Descrizione personalizzata** :material-arrow-right-thin: es. "Ruolo che permette di moderare i test" rappresenta la descrizione del ruolo che sarà visibile agli utenti
     * **Ruolo archetipo (opzionale)** :material-arrow-right-thin: es. "Docente (non editor)" un archetipo rappresenta un ruolo predefinito che può essere utilizzato come modello per quello nuovo, in questo caso il ruolo di Docente (non editor) è il più simile a quello di Moderatore:material-shield-account:
     * **Contesti dove questo ruolo può essere assegnato** :material-arrow-right-thin: es. "Sistema" rappresenta il contesto in cui il ruolo può essere assegnato, in questo caso il contesto di Sistema permette di assegnare il ruolo a livello globale, quindi indipendentemente dalla Sperimentazione e/o dal Corso selezionato.
